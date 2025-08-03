@@ -1,4 +1,4 @@
-package main
+package AreaPrint
 
 import "fmt"
 
@@ -24,11 +24,6 @@ func (c Circle) Area() float64 {
 	return 3.14 * c.radius * c.radius
 }
 
-// func main() {
-// 	fmt.Println("Hello Welcome to this printInterface main function")
-// 	val := Square{side: 10.0}
-// 	fmt.Println("square val:", val.Area())
-
-// 	cval := Circle{radius: 5.0}
-// 	fmt.Printf("circle area: %f", cval.Area())
-// }
+func PrintArea(s Shape) {
+	fmt.Println("Area:", s.Area())
+}
